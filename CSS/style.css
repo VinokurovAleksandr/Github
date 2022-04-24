@@ -1,2 +1,61 @@
+/* heder colir #212121 */
+/* под текст #757575 + тел. */
+/* заголовок белый #FFFFFF */
+/* Акцент кнопок #2196F3 */
+/* фон #E5E5E5 */
 
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --fokus-color: #2196f3;
+  --button-color-white: #ffffff;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+ul {
+  list-style: none;
 
+  /* side nav */
+}
+.side-nav a {
+  color: var(--primary-text-color);
+}
+.side-nav .link:hover,
+.side-nav .link:focus {
+  color: var(--fokus-color);
+}
+.side-nav .link.current {
+  color: var(--fokus-color);
+}
+.contact-info {
+  color: var(--primary-text-color);
+  list-style: none;
+}
+.contact-info:hover {
+  color: var(--fokus-color);
+}
+/* features */
+.features-list .title {
+  color: var(--primary-text-color);
+}
+.features-paragraf {
+  color: var(--title-text-color);
+}
+
+/* section team */
+.my-team .title {
+  color: var(--primary-text-color);
+}
+.my-team .name-team {
+  color: var(--primary-text-color);
+}
+.my-team .subtext {
+  color: var(--title-text-color);
+}
+.button {
+  color: var(--button-color-white);
+  background-color: var(--fokus-color);
+}
+/* tooters */
