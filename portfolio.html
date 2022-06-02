@@ -17,61 +17,69 @@
   </head>
   <body>
     <!--Шапка-->
-    <header>
-      <div class="container">
-        <nav>
-          <a href="./index.html"> <img src="./image/WebStudio.svg" alt="" /></a>
+       <header class="header">
+      <div class="container head-nav">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">Web<span class="logo-header-color">Studio</span></a>
           <ul class="side-nav list">
-            <li><a href="./index.html" class="link ">Студия</a></li>
-            <li><a href="" class="link current">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item"><a href="" class="link current">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts-list list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="contact-info">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380991111111" class="contact-info">+38 099 111 11 11</a></li>
+          <li class="item"><a href="tel:+380991111111" class="contact-info">+38 099 111 11 11</a></li>
         </ul>
-      </div>
+        </div> 
     </header>
-    <main>
-      <section>
+    
+      <section class="section">
         <div class="container">
-        <div class="portfolio-nav list">
+          <ul class="portfolio-nav list">
+            <li class="prt-items"><button class="link">Все</button></li>
+            <li class="prt-items"><button class="link">Веб-сайты</button></li>
+            <li class="prt-items"><button class="link">Приложения</button></li>
+            <li class="prt-items"><button class="link">Дизайн</button></li>
+            <li class="prt-items"><button class="link">Маркетинг</button></li>
+          </ul>
+        <!-- <div class="portfolio-nav list">
           <button class="link" type="button">Все</button>
           <button class="link" type="button">Веб-сайты</button>
           <button class="link" type="button">Приложения</button>
           <button class="link" type="button">Дизайн</button>
           <button class="link" type="button">Маркетинг</button>
-        </div>
+        </div> -->
+        
         <ul class="portfolio-works list">
-          <li>
+          <li class="items">
             <img src="./image/тезнокряк-min.jpg" alt="тезнокряк" width="370" />
             <h2 class="title">Технокряк</h2>
             <p class="subtext">Веб-сайт</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/neworleanvsg-min.jpg" alt="Постер" width="370" />
             <h2 class="title">Постер New Orlean vs Golden Star</h2>
             <p class="subtext">Дизайн</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/seafood-min.jpg" alt="Ресторан Seafood" width="370" />
             <h2 class="title">Ресторан Seafood</h2>
             <p class="subtext">Приложение</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/prime-min.jpg" alt="Проект Prime" width="370" />
             <h2 class="title">Проект Prime</h2>
             <p class="subtext">Маркетинг</p>
           </li>
-          <li>
-            <img src="./image/Bоксес-min.jpg" alt="Проект Boxes" width="370" />
+          <li class="items">
+            <img src="./image/boxes.jpg" alt="Проект Boxes" width="370" />
             <h2 class="title">Проект Boxes</h2>
             <p class="subtext">Приложение</p>
           </li>
-          <li>
+          <li class="items">
             <img
               src="./image/inspirationhasnoborders-min.jpg"
               alt="Inspiration has no Borders"
@@ -80,17 +88,17 @@
             <h2 class="title">Inspiration has no Borders</h2>
             <p class="subtext">Веб-сайт</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/limitededition-min.jpg" alt="Издание Limited Edition" width="370" />
             <h2 class="title">Издание Limited Edition</h2>
             <p class="subtext">Дизайн</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/lab-min.jpg" alt="Проект LAB" width="370" />
             <h2 class="title">Проект LAB</h2>
             <p class="subtext">Маркетинг</p>
           </li>
-          <li>
+          <li class="items">
             <img src="./image/growingusiness-min.jpg" alt="Growing Business" width="370" />
             <h2 class="title">Growing Business</h2>
             <p class="subtext">Приложение</p>
@@ -104,7 +112,7 @@
         <div class="container">
           <a href="./index.html" class="logo">Web<span class="logocolor">Studio</span></a>
           <address>
-            <ul class="list">
+            <ul class="">
               <li>
                 <a href="" class="footer-addres">г.Киев, пр-т Леси Украинки, 26</a>
               </li>
