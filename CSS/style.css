@@ -12,6 +12,16 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 :root {
   --primary-text-color: #212121;
@@ -189,7 +199,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
   to right, rgba(47, 48, 58, 0.4),
@@ -446,10 +456,52 @@ border-color: #2196f3;
 }
 
 /*----------------- Footer------------ */
+.logo {
+  color: #2196F3;
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.logocolor {
+  color: var(--button-color-white);
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
 .footer {
-  
+  padding: 60px 0;
   background-color: #2F303A;
 }
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address{
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer-list{
+  padding: 0;
+}
+.footer-list .item{
+  margin-top: 9px;
+}
+.footer-list .item:first-child{
+  margin-top: 0;
+}
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
  
@@ -461,7 +513,6 @@ border-color: #2196f3;
 }
 .footer-addres{
   color: var(--button-color-white);
- 
 
   font-weight: 400;
   font-size: 14px;
@@ -469,28 +520,51 @@ border-color: #2196f3;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo{
-  color: #2196F3;
-
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  text-decoration: none;
+.footer-social{
+  margin-left: 70px;
 }
-.logocolor{
-  color: var(--button-color-white);
-
-  font-family: 'Raleway';
+.footer-title{
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 14px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  text-decoration: none;
+  color: #FFFFFF;
+  
 }
+.footer-socials{
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.footer-social-item{
+  width: 44px;
+  height: 44px;
+}
+.footer-social-link{
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-item + .footer-social-item{
+  margin-left: 10px;
+}
+.footer-svg{
+  fill: #FFFFFF;
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+  background-color: #2196F3;
+}
+
+
+
 
 
 
