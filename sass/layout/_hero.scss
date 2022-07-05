@@ -13,8 +13,16 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../image/prew.jpg);
     background-color: #C4C4C4;
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: url('/image/prewx2-min.jpg');
+            }
     
-}
+}}
 
 .hero__title {
     margin-top: 0;
