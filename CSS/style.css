@@ -233,9 +233,12 @@ img {
   background-size: cover;
   max-width: 1600px;
   height: 600px;
+  /* background-image: linear-gradient(
+  to right, rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url(../image/prew.jpg); */
   background-image: linear-gradient(
   to right, rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), url(../image/prew.jpg);
+  rgba(47, 48, 58, 0.4)), url(../image/Hero/hero_mobilX1.jpg);
   background-color: #C4C4C4;
 }
 
